@@ -1,0 +1,123 @@
+{
+  "clientes": [
+    {
+      "id": "1",
+      "nombre": "Karleigh",
+      "apellido": "Berger",
+      "telefono": "+(503) 6315-5440",
+      "nit": "16440728 9984"
+    },
+    {
+      "id": "2",
+      "nombre": "Noelani",
+      "apellido": "Ford",
+      "telefono": "+(503) 7378-9049",
+      "nit": "16610629 6798"
+    },
+    {
+      "id": "3",
+      "nombre": "Rinah",
+      "apellido": "Clark",
+      "telefono": "+(503) 5108-0971",
+      "nit": "16520224 1468"
+    },
+    {
+      "id": "4",
+      "nombre": "Damon",
+      "apellido": "Barnes",
+      "telefono": "+(503) 6153-8382",
+      "nit": "16060325 0671"
+    },
+    {
+      "id": "5",
+      "nombre": "Francis",
+      "apellido": "Rivera",
+      "telefono": "+(503) 2728-3564",
+      "nit": "16820503 7222"
+    },
+    {
+      "id": "6",
+      "nombre": "Ferdinand",
+      "apellido": "Barber",
+      "telefono": "+(503) 1595-2212",
+      "nit": "16870614 6365"
+    },
+    {
+      "id": "7",
+      "nombre": "Stuart",
+      "apellido": "Albert",
+      "telefono": "+(503) 3897-0119",
+      "nit": "16810520 9129"
+    },
+    {
+      "id": "8",
+      "nombre": "Rhiannon",
+      "apellido": "Aguirre",
+      "telefono": "+(503) 9170-2174",
+      "nit": "16260924 2256"
+    },
+    {
+      "id": "9",
+      "nombre": "Hunter",
+      "apellido": "Justice",
+      "telefono": "+(503) 0949-9272",
+      "nit": "16750621 2500"
+    },
+    {
+      "id": 10,
+      "nombre": "Alohomora",
+      "apellido": "Viche",
+      "telefono": "12121221",
+      "nit": "4564654654"
+    },
+    {
+      "id": 11,
+      "nombre": "Enrique",
+      "apellido": "Rivas",
+      "telefono": "21456598",
+      "nit": "656565"
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Cámara Nikon",
+      "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+      "categoria": "camara",
+      "precio": "125.69",
+      "url": "https://cdn-4.nikon-cdn.com/e/Q5NM96RZZo-YRYNeYvAi9beHK4x3L-8iSKFuXbTDiVzOj5_9D03cEdJ1gEjX7rK74bi3TemBsjwqkN1duzuOiA==/Views/1529_D3300_front.png"
+    },
+    {
+      "id": 2,
+      "nombre": "Lente 45mm",
+      "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+      "categoria": "camara",
+      "precio": "45.63",
+      "url": "https://cdn-4.nikon-cdn.com/e/Q5NM96RZZo-fTYlSZPBjlMhlFa1VHARsAMnUXbUq7pWYnXnmu4bm3H6KaO1eLb1Os-Z8wf6s5vbRNuVJDwpWAw==/Views/2183_AF-S-DX-NIKKOR-35mm-f-1.8G_front.png"
+    },
+    {
+      "id": 3,
+      "nombre": "Kit esencial para cámara réflex",
+      "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+      "categoria": "accesorios",
+      "precio": "30.99",
+      "url": "https://m.media-amazon.com/images/I/81iAXuAB7ZL._AC_SY355_.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Trípode plegable compacto",
+      "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+      "categoria": "Accesorios",
+      "precio": "10.50",
+      "url": "https://gabastorecr.com/wp-content/uploads/2020/09/2-1.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Filtros para fotografía",
+      "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+      "categoria": "accesorios",
+      "precio": "25.60",
+      "url": "https://i2.wp.com/clubdefotografia.net/wp-content/uploads/2016/12/Juego-de-Filtro-para-camara-reflex.jpg"
+    }
+  ]
+}

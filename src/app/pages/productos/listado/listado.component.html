@@ -1,0 +1,74 @@
+<div class="site-section">
+  <div class="container">
+      <mat-toolbar>
+          <span>Productos</span>
+          <span class="example-spacer"></span>
+          <button mat-raised-button color="accent" routerLink="/productos/crear" (click)="btnAccion(1)">Nuevo Producto</button>
+      </mat-toolbar>
+  
+      <!-- Filtro de tabla -->
+      <mat-form-field appearance="standard">
+        <mat-label>Filtrar</mat-label>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+      </mat-form-field>
+  
+      <div class="mat-elevation-z10">
+  
+          <table mat-table [dataSource]="dataSource" matSort>
+              <ng-container matColumnDef="id">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header > No. </th>
+                  <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+              </ng-container>
+  
+              <ng-container matColumnDef="nombre">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header> Nombre </th>
+                  <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+              </ng-container>
+  
+              <ng-container matColumnDef="descripcion">
+                  <th mat-header-cell *matHeaderCellDef> Descripción </th>
+                  <td mat-cell *matCellDef="let element"> {{element.descripcion}} </td>
+                </ng-container> 
+  
+                <ng-container matColumnDef="precio">
+                  <th mat-header-cell *matHeaderCellDef> Precio </th>
+                  <td mat-cell *matCellDef="let element"> $ {{element.precio}} </td>
+                </ng-container> 
+  
+                <ng-container matColumnDef="admin">
+                  <th mat-header-cell *matHeaderCellDef>  </th>
+                  <td mat-cell *matCellDef="let element">
+                    <div class="gestion">              
+                      <button (click)="btnAccion(2)" mat-icon-button routerLink="/productos/ver/{{element.id}}" color="accent" matTooltip="Ver producto">
+                        <span class="icon icon-search"></span>
+                      </button>
+                      <button (click)="btnAccion(3)" mat-icon-button routerLink="/productos/editar/{{element.id}}" color="primary" matTooltip="Editar producto">
+                        <span class="icon icon-edit"></span>
+                      </button> 
+                      <button (click)="eliminarProducto(element.id)" mat-icon-button color="warn" matTooltip="Eliminar producto">
+                        <span class="icon icon-delete"></span>
+                      </button> 
+                    </div>  
+                  </td>
+                </ng-container>
+  
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        
+                <!-- No hay matching en filtro -->
+                <tr class="mat-row" *matNoDataRow>
+                  <td class="mat-cell" colspan="4">No se encuentra coincidencia "{{input.value}}"</td>
+                </tr>
+  
+          </table>
+          <mat-paginator [pageSizeOptions]="[5, 10, 25, 50]"></mat-paginator>
+                
+      </div>
+      
+  </div>
+</div>
+
+
+
+
+

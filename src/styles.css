@@ -1,1 +1,115 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.bPrimary{ background-color : #283593; }
+.primary{ color : #283593; }
+
+.bAccent{ background-color : #FF4081; }
+.accent{ color : #FF4081; }
+
+a:hover {
+    color: #FF4081;
+}
+
+a {
+    text-decoration: none;
+}
+
+.example-spacer { 
+    flex: 1 1 auto; 
+}
+
+table { 
+    width: 100%; 
+    margin-top:8px; 
+}
+
+mat-form-field {
+    font-size: 14px; 
+    width: 100%; 
+}
+
+.ancho{
+    width: 80%;
+}
+
+.separadorTop { 
+    margin-top:8px; 
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+.icon {
+    font-size: 1.2rem;
+}
+
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+}
+
+.ml-md-auto, .mx-md-auto {
+    margin-left: auto!important;
+}
+
+.precio {
+    font-size: .9rem;
+    font-weight: lighter;
+    color: #FF4081;
+}
+
+.nombreProd{
+    font-size: 1.0rem;
+    font-weight: initial;
+    color: #283593;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
+
+.descrip{
+    text-align: justify;
+}
+
+.imgpro{
+    height: 150px;
+    width: auto;
+  }
+
+@media (max-width:320px){
+    .imgpro{
+        height: 100px;
+    }
+}
+
+@media (max-width:991px){
+    .imgpro{
+        height: 200px;
+    }
+  }
+
+  .vhr{
+    border: 1px solid rgb(230, 230, 230);
+    height:100%;
+    padding: 15px;
+    margin: 2px;  
+    border-radius: 10px;  
+  }
+
+  
+.sep {
+    margin-bottom: 30px;
+}
+
+
+  

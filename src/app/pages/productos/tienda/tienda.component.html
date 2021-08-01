@@ -1,0 +1,62 @@
+<div class="site-section">
+    
+  <owl-carousel-o [options]="customOptions"  >
+      
+    <ng-template carouselSlide *ngFor="let item of productos_">
+        <div class="container">
+          <div class="half-post-entry d-block d-lg-flex bg-light">
+            <div class="img-bg" style="background-image: url('{{item.url}}')"></div>
+            <div class="contents">
+              
+              <span class="caption accent">NUEVAS ENTRDAS</span>
+              <h2 class="nombreProd" style="font-weight: bold; font-size: 2rem;">{{item.nombre}}</h2>
+              <p class="mb-3">{{item.descripcion}}</p>
+              <p class="mb-3">{{item.descripcion}}</p>
+              <div class="post-meta">
+                <span class="d-block">Precio de introducción</span>
+                <span class="precio" style="font-weight: bold; font-size: 2rem;">$&nbsp;{{item.precio}}</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </ng-template>
+    
+  </owl-carousel-o>
+
+
+<!-- PRODUCTOS EN LA TIENDA -->
+
+  <br><br><br>
+  <div class="container" *ngIf="productos">
+    <div class="row">
+    
+      <div class="col-lg-4 sep"  *ngFor="let producto of productos" >
+      <div class="bg-light vhr">    
+        <div class="post-entry-2 d-flex">
+          <div class="contents">
+            <img class="imgpro center" src="{{producto.url}}"><br>
+            <span class="nombreProd">{{producto.nombre}}</span>            
+            <p class="mb-3 descrip">{{producto.descripcion}}</p>            
+            <mat-chip-list>
+              <mat-chip>{{producto.categoria}}</mat-chip>              
+            </mat-chip-list>          
+            <hr>           
+            <span class="precio">$&nbsp;{{producto.precio}}</span>            
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+

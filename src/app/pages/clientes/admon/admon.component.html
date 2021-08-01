@@ -1,0 +1,67 @@
+<div class="site-section">
+  <div class="container">
+      
+      <mat-toolbar >
+        <span *ngIf="crear">Agregar Cliente</span>
+        <span *ngIf="editar">Editar Cliente</span>
+        <span *ngIf="ver">Ver Cliente</span>
+        <span class="example-spacer"></span>
+        <button mat-raised-button color="accent" routerLink="/clientes/listado">Regresar</button>
+      </mat-toolbar>    
+    
+      <div class="mat-elevation-z10 separadorTop">
+        <br>
+        <mat-grid-list cols="2" rowHeight="70px">
+          <mat-grid-tile [colspan]="1" [rowspan]="5">
+            <img src="./assets/images/customers.png" width="300px" height="300px">
+          </mat-grid-tile>
+    
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">     
+                    
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <mat-form-field class="ancho" appearance="fill">
+                <mat-label>Nombre</mat-label>
+                <input type="text" [readonly]="ver" autocomplete="off" matInput placeholder="Nombre" formControlName="nombre">
+              </mat-form-field>
+            </mat-grid-tile>
+      
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <mat-form-field class="ancho" appearance="fill">
+                <mat-label>Apellido</mat-label>
+                <input type="text" [readonly]="ver" autocomplete="off" matInput placeholder="Apellido" formControlName="apellido">
+              </mat-form-field>
+            </mat-grid-tile>
+      
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <mat-form-field class="ancho" appearance="fill">
+                <mat-label>Teléfono</mat-label>
+                <input type="text" [readonly]="ver" autocomplete="off" matInput placeholder="Teléfono" formControlName="telefono">
+              </mat-form-field>
+            </mat-grid-tile>
+      
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <mat-form-field class="ancho" appearance="fill">
+                <mat-label>NIT</mat-label>
+                <input type="text" [readonly]="ver" autocomplete="off" matInput placeholder="NIT" formControlName="nit">
+              </mat-form-field>
+            </mat-grid-tile>
+      
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button 
+                type="submit" *ngIf="crear" (click)="btnAccion(1)" 
+                class="ancho" mat-raised-button color="primary" 
+                [disabled]="form.invalid">Agregar
+              </button>
+              <button 
+                type="submit" *ngIf="editar" (click)="btnAccion(2)" 
+                class="ancho" mat-raised-button color="primary" 
+                [disabled]="form.invalid">Editar
+              </button>
+          </mat-grid-tile>
+            
+          </form>
+        </mat-grid-list>
+      </div>
+      <br>
+  </div>
+</div>

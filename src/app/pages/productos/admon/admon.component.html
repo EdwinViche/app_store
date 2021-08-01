@@ -1,0 +1,79 @@
+<div class="site-section">
+  <div class="container">
+      
+      <mat-toolbar>
+        <span *ngIf="crear">Agregar Producto</span>
+        <span *ngIf="editar">Editar Producto</span>
+        <span *ngIf="ver">Ver Producto</span>
+        <span class="example-spacer"></span>
+        <button mat-raised-button color="accent" routerLink="/productos/listado">Regresar</button>
+      </mat-toolbar>    
+    
+      <div class="mat-elevation-z10 separadorTop">
+        <br>
+        <mat-grid-list cols="2" rowHeight="70px">
+          
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">
+  
+              <mat-grid-tile [colspan]="1" [rowspan]="4">
+                  <img *ngIf="crear" src="./assets/images/camera.png" width="250px" height="250px">
+                  <img *ngIf="!crear" src={{form.value.url}} height="250px">                
+              </mat-grid-tile>
+              
+              
+  
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+                  <mat-form-field class="ancho" appearance="fill">
+                    <mat-label>Nombre</mat-label>
+                    <input type="text" [readonly]="ver" autocomplete="off" matInput placeholder="Nombre" formControlName="nombre">
+                  </mat-form-field>
+              </mat-grid-tile>
+  
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+                  <mat-form-field class="ancho" appearance="fill">
+                    <mat-label>Categoría</mat-label>
+                    <input type="text" [readonly]="ver" autocomplete="off" matInput placeholder="Categoría" formControlName="categoria">
+                  </mat-form-field>
+              </mat-grid-tile>
+  
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+                  <mat-form-field class="ancho" appearance="fill">
+                    <mat-label>Precio</mat-label>
+                    <input type="text" [readonly]="ver" autocomplete="off" matInput placeholder="Precio" formControlName="precio">
+                  </mat-form-field>
+              </mat-grid-tile>
+  
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+                  <mat-form-field class="ancho" appearance="fill">
+                    <mat-label>Url-Imagen</mat-label>
+                    <input type="text" [readonly]="ver" autocomplete="off" matInput placeholder="Url-Imagen" formControlName="url">
+                  </mat-form-field>
+              </mat-grid-tile>
+  
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+                  <mat-form-field class="ancho" appearance="fill">
+                      <mat-label>Descripción</mat-label>
+                      <input type="text" [readonly]="ver" autocomplete="off" matInput placeholder="Descripción" formControlName="descripcion">
+                  </mat-form-field>
+              </mat-grid-tile>
+  
+              <mat-grid-tile [colspan]="1" [rowspan]="1">
+                  <button 
+                    type="submit" *ngIf="crear" (click)="btnAccion(1)" 
+                    class="ancho" mat-raised-button color="primary" 
+                    [disabled]="form.invalid">Agregar
+                  </button>
+                  <button 
+                    type="submit" *ngIf="editar" (click)="btnAccion(2)" 
+                    class="ancho" mat-raised-button color="primary" 
+                    [disabled]="form.invalid">Editar
+                  </button>
+              </mat-grid-tile>
+              
+          </form>
+          
+        </mat-grid-list>
+      </div>
+      <br>
+  </div>
+</div>
