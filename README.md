@@ -1,27 +1,14 @@
-# StoreApp
+# Como iniciar la aplicación
+    1.	Descargar el repositorio o clonarlo
+    2.	Se recomienda abrir la carpeta del proyecto con Visual Studio Code (VSC)
+    3.	Tener instalado JSON-SERVER si no lo tiene instalado previamente puede ejecutar el siguiente comando en la terminal.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
+npm install -g json-server
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# En la terminal de comandos de VSC ejecutar los siguientes comandos
+## 1. npm install
+    Con esto iniciara la descarga de todas las dependencias necesarias para ejecutar la aplicación.
+## 2. json-server --watch db.json
+    Esto iniciara el servidor del Backend.
+## 3. ng serve -o   
+    Este comando permitirá compilar la aplicación una vez termine se abrirá automáticamente en el navegador por defecto.

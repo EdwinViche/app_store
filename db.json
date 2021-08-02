@@ -118,6 +118,14 @@
       "categoria": "accesorios",
       "precio": "25.60",
       "url": "https://i2.wp.com/clubdefotografia.net/wp-content/uploads/2016/12/Juego-de-Filtro-para-camara-reflex.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Flash Canon Nikon",
+      "descripcion": "dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "categoria": "accesorios",
+      "precio": "156.2",
+      "url": "https://m.media-amazon.com/images/I/71GBGvnB73L._AC_SY355_.jpg"
     }
   ]
 }
